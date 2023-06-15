@@ -80,3 +80,12 @@ deploy
 6- hilangkan Rp di list cetak detil transaksi dan ubah ke text-right
 7- gunakan modal-lg saat pejualan sampah line 986 dan 990
 8- sorting jenis sampah line 265 admin.transaksi.js
+
+
+- git clone dalam htdocs xampp 7.5
+- buat database dengan nama db_bsdahliah
+- import file db_bsdahliah.sql yang ada di root folder
+- composer install
+- php artisan serve
+
+*jangan ubah nama folder root, biarkan sama seperti nama repo github*

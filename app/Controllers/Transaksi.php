@@ -671,11 +671,11 @@ class Transaksi extends BaseController
         </head>
         
         <body>
-            <div style='border-bottom: 2px solid black;padding-bottom: 0px;'>
+            <div style='border-bottom: 2px solid black;padding-bottom: 20px;'>
                 <table border='0' width='100%'>
                    <tr>
                         <th style='text-align: left;'>
-                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 160px;'>
+                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 100px;'>
                         </th>
                         <th style='text-align: right;'>
                             <h1  style='font-size: 2em;'>
@@ -942,11 +942,11 @@ class Transaksi extends BaseController
         </head>
         
         <body>
-            <div style='border-bottom: 2px solid black;padding-bottom: 0px;'>
+            <div style='border-bottom: 2px solid black;padding-bottom: 20px;'>
                 <table border='0' width='100%'>
                    <tr>
                         <th style='text-align: left;'>
-                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 160px;'>
+                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 100px;'>
                         </th>
                         <th style='text-align: right;'>
                             <h1  style='font-size: 2em;'>
@@ -1196,11 +1196,11 @@ class Transaksi extends BaseController
         </head>
         
         <body>
-            <div style='border-bottom: 2px solid black;padding-bottom: 0px;'>
+            <div style='border-bottom: 2px solid black;padding-bottom: 20px;'>
                 <table border='0' width='100%'>
                    <tr>
                         <th style='text-align: left;'>
-                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 160px;'>
+                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 100px;'>
                         </th>
                         <th style='text-align: right;'>
                             <h1  style='font-size: 2em;'>
@@ -1388,11 +1388,11 @@ class Transaksi extends BaseController
         </head>
         
         <body>
-            <div style='border-bottom: 2px solid black;padding-bottom: 0px;'>
+            <div style='border-bottom: 2px solid black;padding-bottom: 20px;'>
                 <table border='0' width='100%'>
                    <tr>
                         <th style='text-align: left;'>
-                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 160px;'>
+                            <img src='".base_url()."/assets/images/banksampah-logo.png' style='width: 100px;'>
                         </th>
                         <th style='text-align: right;'>
                             <h1  style='font-size: 2em;'>

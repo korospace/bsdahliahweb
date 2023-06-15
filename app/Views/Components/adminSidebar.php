@@ -30,10 +30,9 @@
   id="sidenav-main"
   style="font-family: 'qc-semibold';">
     <div class="sidenav-header position-sticky bg-white" style="top: 0;z-index: 20">
-        <span class="navbar-brand mt-3"
-            target="_blank">
+        <span class="navbar-brand mt-3" target="_blank">
             <img src="<?= base_url('assets/images/banksampah-logo.webp');?>" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold">Banksampah Teratai</span>
+            <span class="ml-3 font-weight-bold">Banksampah Dahlia</span>
         </span>
     </div>
     <hr class="horizontal dark mt-0">

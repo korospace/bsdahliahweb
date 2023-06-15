@@ -3,10 +3,17 @@
 <!-- Css -->
 <?= $this->section('contentCss'); ?>
 	<style>
+		.register-left .wraper_logo {
+			width: 110px;
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 15px 15px 20px 15px;
+		}
+
 		.register-left img {
-			width: 100px;
-			-webkit-animation: mover 2s infinite alternate;
-			animation: mover 1s infinite alternate;
+			width: 100%;
+			/* -webkit-animation: mover 2s infinite alternate;
+			animation: mover 1s infinite alternate; */
 		}
 
 		.btnRegister {
@@ -100,10 +107,11 @@
 
 				<!-- side left -->
 				<div class="register-left col-md-4 d-flex flex-column justify-content-center align-items-center text-white text-center">
-					<img 
-					  class="mt-0" 
-					  src="<?= base_url('assets/images/banksampah-logo.webp'); ?>" 
-					  alt="logo banksampah budiluhur" />
+					<div class="mt-0 wraper_logo">
+						<img  
+						  src="<?= base_url('assets/images/banksampah-logo.webp'); ?>" 
+						  alt="logo banksampah dahlia" />
+					</div>
 					<div class="mt-3">
 						<h3>Selamat Datang Kembali</h3>
 						<p>Silahkan Login Untuk Ketampilan Dashboard</p>

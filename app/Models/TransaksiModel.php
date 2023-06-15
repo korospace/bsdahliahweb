@@ -473,7 +473,7 @@ class TransaksiModel extends Model
                 }
 
                 $orderby     = (isset($get['orderby']) && $get['orderby']=='terbaru')? 'DESC': 'ASC';
-                $query      .= " ORDER BY transaksi.no $orderby;";
+                $query      .= " ORDER BY transaksi.date $orderby;";
                 $transaction = $this->db->query($query)->getResultArray();
                 $transaction = $this->filterAllTransaksi($transaction);
             } 
