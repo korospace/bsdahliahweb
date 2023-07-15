@@ -60,9 +60,9 @@ class Validation
     // new password with old
 	public $newPasswordWithOld = [
 		'new_password' => [
-            'rules'  => 'min_length[8]|max_length[20]',
+            'rules'  => 'min_length[7]|max_length[20]',
             'errors' => [
-                'min_length'  => 'min 8 character',
+                'min_length'  => 'min 7 character',
                 'max_length'  => 'max 20 character',
             ],
 		],
@@ -77,9 +77,9 @@ class Validation
     // new password
 	public $newPassword = [
 		'new_password' => [
-            'rules'  => 'min_length[8]|max_length[20]',
+            'rules'  => 'min_length[7]|max_length[20]',
             'errors' => [
-                'min_length'  => 'min 8 character',
+                'min_length'  => 'min 7 character',
                 'max_length'  => 'max 20 character',
             ],
 		],
@@ -335,6 +335,13 @@ class Validation
                 'max_length'  => 'max 255 character',
             ],
 		],
+		'uang' => [
+            'rules'  => 'max_length[11]|decimal',
+            'errors' => [
+                'max_length'  => 'max 11 character',
+                'decimal'  => 'number allowed',
+            ],
+		],
 		'kelamin' => [
             'rules'  => 'required|in_list[laki-laki,perempuan]',
             'errors' => [
@@ -563,10 +570,10 @@ class Validation
     
 	public $editProfileNasabahByAdmin = [
 		'username' => [
-            'rules'  => 'required|min_length[8]|max_length[20]|is_unique[users.username,users.id,{id}]',
+            'rules'  => 'required|min_length[7]|max_length[20]|is_unique[users.username,users.id,{id}]',
             'errors' => [
                 'required'    => 'username is required',
-                'min_length'  => 'min 8 character',
+                'min_length'  => 'min 7 character',
                 'max_length'  => 'max 20 character',
                 'is_unique'   => 'username sudah terdaftar',
             ],
@@ -606,7 +613,14 @@ class Validation
                 'required'    => 'kelamin is required',
                 'in_list'     => "value must be 'laki-laki' or 'perempuan'",
             ],
-		]
+		],
+        'uang' => [
+            'rules'  => 'max_length[11]|decimal',
+            'errors' => [
+                'max_length'  => 'max 11 character',
+                'decimal'  => 'number allowed',
+            ],
+		],
 	];
 
     //  send kritik

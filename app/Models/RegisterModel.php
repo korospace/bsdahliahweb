@@ -76,12 +76,14 @@ class RegisterModel extends Model
     public function addNasabah(array $data): array
     {
         try {
+            $uang    = $data['uang'];
             $wilayah = $data['wilayah'];
+            unset($data['uang']);
             unset($data['wilayah']);
 
             $this->db->transBegin();
             $this->db->table($this->table)->insert($data);
-            $this->db->table("dompet")->insert(['id_user' => $data['id']]);
+            $this->db->table("dompet")->insert(['id_user' => $data['id'],'uang' => $uang]);
             $this->db->table("wilayah")->insert($wilayah);
 
             if ($this->db->transStatus() === false) {

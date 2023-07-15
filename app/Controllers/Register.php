@@ -116,6 +116,7 @@ class Register extends BaseController
                 "created_at"   => (int)time(),
                 "privilege"    => 'nasabah',
                 "otp"          => $otp,
+                "uang"         => isset($data['uang']) && $data['uang'] != "" ? $data['uang'] : 0,
                 "wilayah"      => [
                     'id_user'   => $idNasabah,
                     'kodepos'   => trim($data['kodepos']),

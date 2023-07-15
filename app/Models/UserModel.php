@@ -84,8 +84,9 @@ class UserModel extends Model
             WHERE users.privilege = 'nasabah'";
 
             if (isset($get['id'])) {
-                $query  = "SELECT users.id,users.email,users.username,users.nama_lengkap,users.notelp,users.nik,users.alamat,users.tgl_lahir,users.kelamin,users.last_active,users.is_verify,users.created_at
+                $query  = "SELECT users.id,users.email,users.username,users.nama_lengkap,users.notelp,users.nik,users.alamat,users.tgl_lahir,users.kelamin,users.last_active,users.is_verify,users.created_at,dompet.uang
                 FROM users
+                JOIN dompet ON (users.id = dompet.id_user) 
                 WHERE users.privilege = 'nasabah' 
                 AND users.id = '".$get['id']."'";
             }
@@ -207,7 +208,11 @@ class UserModel extends Model
     public function editUser(array $data): array
     {
         try {
+            $uang = $data['uang'];
+            unset($data['uang']);
+
             $this->db->table($this->table)->where('id',$data['id'])->update($data);
+            $this->db->table('dompet')->where('id_user',$data['id'])->update(['uang' => $uang]);
             
             return [
                 'status'   => 201,

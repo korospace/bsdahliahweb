@@ -10,7 +10,7 @@ class HomePage extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Selamat Datang di Website Bank Sampah Teratai',
+            'title' => 'Selamat Datang di Website Banksampah Dahlia',
             'baseUrl' => base_url(),
         ];
 
@@ -20,7 +20,7 @@ class HomePage extends BaseController
     public function listPenghargaan()
     {
         $data = [
-            'title'    => 'Penghargaan Yang Diperoleh Banksampah Teratai',
+            'title'    => 'Penghargaan Yang Diperoleh Banksampah Dahlia',
         ];
 
         return view('HomePage/listPenghargaan', $data);

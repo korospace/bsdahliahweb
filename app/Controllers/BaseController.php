@@ -170,17 +170,17 @@ class BaseController extends ResourceController
         $mail = new PHPMailer(true);
 
         try {
-            // $mail->isSMTP();                          
+            $mail->isSMTP();                          
             $mail->Host       = 'smtp.gmail.com';
             $mail->Port       = 465;
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username   = 'bstppservice@gmail.com';
-            $mail->Password   = 'iwqjdfbemjexrrvw';
+            $mail->Username   = 'sistembanksampahdahlia@gmail.com';
+            $mail->Password   = 'xhqnqmwqibspauej';
             $mail->Subject    = 'code OTP';
-            $mail->Body       = "Terimakasih sudah bergabung bersama Bank Sampah Teratai.<br>berikut adalah code OTP anda:<br><h1>$otp</h1>";
+            $mail->Body       = "Terimakasih sudah bergabung bersama Bank Sampah Dahlia.<br>berikut adalah code OTP anda:<br><h1>$otp</h1>";
 
-            $mail->setFrom('bstppservice@gmail.com', 'Bank Sampah Teratai');
+            $mail->setFrom('sistembanksampahdahlia@gmail.com', 'Bank Sampah Dahlia');
             $mail->addAddress($email);
             $mail->isHTML(true);
 
@@ -201,17 +201,17 @@ class BaseController extends ResourceController
         $mail = new PHPMailer(true);
 
         try {
-            // $mail->isSMTP();                          
+            $mail->isSMTP();                          
             $mail->Host       = 'smtp.gmail.com';
             $mail->Port       = 465;
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username   = 'bstppservice@gmail.com';
-            $mail->Password   = 'iwqjdfbemjexrrvw';
+            $mail->Username   = 'sistembanksampahdahlia@gmail.com';
+            $mail->Password   = 'xhqnqmwqibspauej';
             $mail->Subject    = 'Lupa Password';
             $mail->Body       = "<u>password anda:</u><h1>$password</h1>";
 
-            $mail->setFrom('bstppservice@gmail.com', 'Bank Sampah Teratai');
+            $mail->setFrom('sistembanksampahdahlia@gmail.com', 'Bank Sampah Dahlia');
             $mail->addAddress($userEmail);
             $mail->isHTML(true);
 
@@ -232,20 +232,20 @@ class BaseController extends ResourceController
         $mail = new PHPMailer(true);
 
         try {
-            // $mail->isSMTP();                          
+            $mail->isSMTP();                          
             $mail->Host       = 'smtp.gmail.com';
             $mail->Port       = 465;
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'ssl';
-            $mail->Username   = 'bstppservice@gmail.com';
-            $mail->Password   = 'iwqjdfbemjexrrvw';
+            $mail->Username   = 'sistembanksampahdahlia@gmail.com';
+            $mail->Password   = 'xhqnqmwqibspauej';
             $mail->Subject    = 'Kritik Dan Saran';
             $mail->Body       = "<p>name  : $userName</p>
             <p>email : $userEmail</p><br>
             <p><b><u>kriti dan saran:</u></b></p>$message";
 
             $mail->setFrom($userEmail,$userName);
-            $mail->addAddress('bstpinangpermai@gmail.com','Banksampah Teratai');
+            $mail->addAddress('sistembanksampahdahlia@gmail.com','Banksampah Dahlia');
             $mail->addReplyTo($userEmail,$userName);
             $mail->isHTML(true);
 

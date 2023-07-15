@@ -411,6 +411,20 @@
 					<hr class="horizontal dark mb-2">
 					<h6 class="font-italic opacity-8 mb-2">data opsionial</h6>
 
+					<!-- **** uang **** -->
+					<div class="input-group col-lg-12 mb-4 form-group">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text bg-gray border-md" style="padding-left: 1.66rem;padding-right: 1.66rem;">
+									<i class="fa fa-dollar text-muted"></i>
+								</span>
+							</div>
+							<input type="number" class="form-control px-2" id="uang" name="uang" autocomplete="off" placeholder="saldo">
+						</div>
+						<small
+							id="uang-error"
+							class="text-danger"></small>
+					</div>
 					<!-- **** tgl lahir **** -->
 					<div class="input-group col-lg-12 mb-4 form-group">
 						<div class="input-group">

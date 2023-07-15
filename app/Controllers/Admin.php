@@ -763,6 +763,7 @@ class Admin extends BaseController
                 "tgl_lahir"    => isset($data['tgl_lahir']) && $data['tgl_lahir'] != "" ? trim($data['tgl_lahir']) : "",
                 "kelamin"      => $data['kelamin'],
                 "is_verify"    => (trim($data['is_verify']) == '1') ?true:false,
+                "uang"         => isset($data['uang']) && $data['uang'] != "" ? $data['uang'] : 0,
             ];
 
             if ($newpass != '') {
