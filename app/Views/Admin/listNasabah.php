@@ -415,9 +415,9 @@
 					<div class="input-group col-lg-12 mb-4 form-group">
 						<div class="input-group">
 							<div class="input-group-prepend">
-								<span class="input-group-text bg-gray border-md" style="padding-left: 1.66rem;padding-right: 1.66rem;">
-									<i class="fa fa-dollar text-muted"></i>
-								</span>
+								<span class="input-group-text bg-gray border-md" style="padding-left: 1.3rem;padding-right: 1.3rem;font-size: 0.8rem;font-weight: 600;">
+                                    Rp
+                                </span>
 							</div>
 							<input type="number" class="form-control px-2" id="uang" name="uang" autocomplete="off" placeholder="saldo">
 						</div>
