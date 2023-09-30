@@ -1,14 +1,13 @@
 {
   "name": "tailwind",
   "version": "1.0.0",
-  "description": "tailwind for tgadget website",
+  "description": "tailwind for banksampahpedia website",
   "main": "postcss.config.js",
   "scripts": {
     "build-tailwind-homepage": "postcss src/homepage.css -o dist/homepage.css"
   },
   "keywords": [
-    "tailwind",
-    "tgadget"
+    "tailwind"
   ],
   "author": "elkorospace",
   "license": "ISC",
